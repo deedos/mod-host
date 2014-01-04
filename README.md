@@ -43,6 +43,20 @@ Dependencies:
     libargtable2    >= 2.13
     libreadline     >= 6.2
     lilv-utils      (optional)
+    lv2              
+    
+Installing all dependencies on debian based distros: 
+
+    sudo apt-get install libjack-jackd2-dev liblilv-dev libargtable2-dev libreadline-dev lilv-utils
+    
+Compiling lv2 from source
+
+    wget http://lv2plug.in/spec/lv2-1.6.0.tar.bz2
+    sudo apt-get install libgtk2.0-dev libsndfile1-dev 
+    cd lv2** 
+    ./waf configure
+    ./waf 
+    sudo ./waf install
 
 To turn doc/man.txt into a groff manpage you need txt2man. To build and install the manpage run:
 
